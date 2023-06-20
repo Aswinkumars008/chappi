@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}home{% endblock title%}
+{%block content%}
+
+
+<!-- menu -->
+<section class="menu" id="menu">
+    <div class="container">
+    <div class="heading3">Menu</div>
+  </div>
+    <div class="container" id="container2">
+    <div class="row">
+        {% for snack in snacks %}
+
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="{{ snack.img.url }}" alt="{{ snack.name }}">
+          <div class="card-body">
+            <h3>{{ snack.P_name }}</h3>
+            <p>	₹	{{ snack.price }}  <span><strike></strike></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<!-- menu -->
+{%endfor%}
+
+
+{% endblock content%}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}home{% endblock title%}
+{%block content%}
+
+
+<!-- menu -->
+<section class="menu" id="menu">
+    <div class="container">
+    <div class="heading3">Menu</div>
+  </div>
+    <div class="container" id="container2">
+    <div class="row">
+        {% for hot_drink in hot_drinks %}
+
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="{{ hot_drink.img.url }}" alt="{{ hot_drink.name }}">
+          <div class="card-body">
+            <h3>{{ hot_drink.P_name }}</h3>
+            <p>	₹ {{ hot_drink.price }}  <span><strike></strike></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<!-- menu -->
+{%endfor%}
+
+
+{% endblock content%}

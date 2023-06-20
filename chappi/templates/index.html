@@ -1,0 +1,248 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}home{% endblock title%}
+{%block content%}
+<div class="all-content">
+   
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg" id="navbar">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#" id="logo"><img src="{% static '/image/logo.jpg' %}" alt=""></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="#">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#about">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#menu">Menu</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#gallary">Gallary</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#contact">Contact</a>
+           </li>
+         
+         </ul>
+       </div>
+     </div>
+   </nav>
+   <!-- navbar -->
+ 
+ <!-- home section -->
+    <section id="home">
+     <div class="content">
+       <h3>Any time is a<br> tea time</h3>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, fugit
+          <br>ipsum dolor sit amet consectetur.
+       </p>
+     </div>
+    </section>
+    <br>
+ 
+ <!-- home section -->
+ 
+ 
+ 
+ <!-- about section -->
+ <div class="about" id="about">
+   <div class="container">
+   <div class="heading">About <span>Us</span></div>
+     <div class="row">
+       <div class="col-md-6">
+         <div class="card">
+           <img src="./images/about.png" alt="">
+         </div>
+       </div>
+       <div class="col-md-6">
+         <h3>What Makes Our Coffee Special?</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
+           <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime! Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt illum in aperiam natus impedit recusandae?
+           <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis excepturi voluptatum!
+          </p>
+       </div>
+     </div>
+   </div>
+ </div><br><br>
+ <!-- about section -->
+ 
+ 
+    
+ 
+
+ 
+ 
+ 
+ 
+ <!-- menu -->
+ <section class="menu" id="menu">
+   <div class="container">
+   <div class="heading3">Menu</div>
+ </div><br>
+   
+ <!-- top cards -->
+ <section class="top-cards">
+  <div class="heading2">Top <span>Categories</span></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="{% static '/image/hotdrinks.jpg' %}" alt="" href ="{% url 'hotdrinks'%}">
+          <a href="{% url 'hotdrinks' %}"><center><br>
+            <button id="about-btn">View HOT DRINKS.</button></center>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          
+          <img src="{% static '/image/cooldrinks.jpg' %}" alt="">
+          <a href="{% url 'cooldrinks' %}"><center><br>
+            <button id="about-btn">View COOL DRINKS.</button></center>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="{% static '/image/snacks.jpg' %}" alt="">
+          <a href="{% url 'snacks' %}"><center><br>
+            <button id="about-btn">View SNACKS.</button></center>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br>
+<!-- top cards -->
+   </div>
+   </div>
+ </section>
+ <!-- menu -->
+ 
+
+
+ 
+
+<!-- our gallary -->
+<br><br><br><br>
+<div class="container" id="gallary">
+  <h1>Our <span>Gallary</span></h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image1.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image2.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image4.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image5.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image6.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our gallary -->
+
+
+
+
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+       <div class="heading6">Contact <span>Us</span></div>
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis
+        <br>ipsum dolor sit amet consectetur.
+       </p>
+
+       <form method="post" action="">
+        {% csrf_token %}
+       <input class="form-control" name="name"  type="text" placeholder="Name" aria-label="default input example"><br>
+       <input class="form-control" name="email" type="email" placeholder="Email" aria-label="default input example"><br>
+       <input class="form-control" name="content" type="text" placeholder="Message" aria-label="default input example"><br>
+       <button id="contact-btn" type="submit">Send Message</button>
+      </form>
+      </div>
+      <div class="col-md-5" id="col">
+        <h1>Info</h1>
+        <p><i class="fa-regular fa-envelope"></i> example@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +92000000000000000</p>
+       <p><i class="fa-solid fa-building-columns"></i> Karcahi Sindh Pakistan</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, culpa</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- contact -->
+
+
+
+
+
+
+
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <a href="https://www.instagram.com/chappi_kada/">
+      <i class="fa-brands fa-instagram"></i></a>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> AK Coding</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>CHAPPI KADA</span></strong>. All Rights Reserved
+  </div>
+</footer>
+   <!-- footer -->
+
+
+
+
+
+ 
+</div>
+
+
+
+{% endblock content%}
